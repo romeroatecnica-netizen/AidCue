@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --cpr-cycle-ms: 545ms;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes aidcue-compress {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(14px);
+  }
+  65% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes aidcue-chest-squeeze {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  40% {
+    transform: scaleY(0.84);
+  }
+  65% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes aidcue-lung-expand {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.09);
+    opacity: 0.95;
+  }
+}
+
+@keyframes aidcue-thrust-arrow {
+  0%, 100% {
+    transform: translate(0px, 0px);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(7px, -7px);
+    opacity: 1;
+  }
+}
+
+@keyframes aidcue-back-slap {
+  0%, 100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  45% {
+    transform: translate(-10px, 8px) rotate(-6deg);
+  }
+}
+
+@keyframes aidcue-wave-drift {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(12px);
+  }
+}
+
+@keyframes aidcue-water-stream {
+  0% {
+    stroke-dashoffset: 24;
+    opacity: 0.65;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes aidcue-pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+.anim-cpr-hand {
+  animation: aidcue-compress var(--cpr-cycle-ms, 545ms) cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.anim-cpr-chest {
+  transform-origin: center bottom;
+  animation: aidcue-chest-squeeze var(--cpr-cycle-ms, 545ms) cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.anim-lung-expand {
+  transform-origin: center center;
+  animation: aidcue-lung-expand 2.2s ease-in-out infinite;
+}
+
+.anim-thrust-arrow {
+  animation: aidcue-thrust-arrow 1.35s ease-in-out infinite;
+}
+
+.anim-back-slap {
+  transform-origin: right top;
+  animation: aidcue-back-slap 1.1s ease-in-out infinite;
+}
+
+.anim-wave-drift {
+  animation: aidcue-wave-drift 3.4s ease-in-out infinite;
+}
+
+.anim-water-stream {
+  stroke-dasharray: 6 6;
+  animation: aidcue-water-stream 0.9s linear infinite;
+}
+
+.anim-pulse-ring {
+  transform-origin: center;
+  animation: aidcue-pulse-ring var(--cpr-cycle-ms, 545ms) ease-out infinite;
+}
+
+.anim-paused * {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-cpr-hand,
+  .anim-cpr-chest,
+  .anim-lung-expand,
+  .anim-thrust-arrow,
+  .anim-back-slap,
+  .anim-wave-drift,
+  .anim-water-stream,
+  .anim-pulse-ring {
+    animation: none !important;
+  }
+}
+
+@media print {
+  .no-print,
+  .ad-slot-container {
+    display: none !important;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AidCue — First Aid Protocols Trainer & CPR Simulator",
+  "description": "Deterministic first-aid protocol trainer, adult & pediatric CPR/choking simulator, water emergency responder, and animated SVG visual guides in 10 languages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
