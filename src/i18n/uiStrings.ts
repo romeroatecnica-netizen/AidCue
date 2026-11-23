@@ -117,10 +117,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'Rapid Triage',
     navClinic: 'Error Clinic',
     navGuideSection: 'Study Guide',
-    heroEyebrow: 'Adult, Child & Infant First Aid Training',
-    heroTitle: 'Master life-saving sequences before seconds count.',
+    heroEyebrow: 'Adult, Child & Infant Protocols',
+    heroTitle: 'First aid and emergency care protocol training',
     heroSubtitle:
-      'Interactive CPR cadence metronome, age-adapted choking and drowning animations, branching emergency scenarios, and deterministic progress tracking.',
+      'Practice CPR, choking relief, water rescue, recovery position, and first-aid procedures step by step with interactive visual guides and emergency scenarios.',
     heroCta: 'Start Emergency Drill',
     disclaimerTitle: 'Educational Training Notice',
     disclaimerBody:
@@ -239,10 +239,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'Reto Rápido',
     navClinic: 'Clínica Fallos',
     navGuideSection: 'Guía Estudio',
-    heroEyebrow: 'Entrenamiento en Adulto, Niño y Lactante',
-    heroTitle: 'Domina las secuencias vitales antes de que cada segundo cuente.',
+    heroEyebrow: 'Protocolos en Adulto, Niño y Lactante',
+    heroTitle: 'Primeros auxilios, entrenamiento de protocolos de atención de emergencia',
     heroSubtitle:
-      'Metrónomo interactivo de RCP, animaciones por edad para atragantamiento y agua, escenarios con consecuencias reales y guardado local en JSON.',
+      'Practica paso a paso las maniobras de RCP, atragantamiento, rescate acuático, posición lateral de seguridad y curas mediante guías visuales y escenarios de decisión.',
     heroCta: 'Iniciar Simulador',
     disclaimerTitle: 'Aviso Educativo',
     disclaimerBody:
@@ -361,10 +361,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'Quiz Rapide',
     navClinic: 'Clinique Erreurs',
     navGuideSection: 'Guide Référence',
-    heroEyebrow: 'Formation Adulte, Enfant & Nourrisson',
-    heroTitle: 'Maîtrisez les gestes qui sauvent avant que chaque seconde compte.',
+    heroEyebrow: 'Protocoles Adulte, Enfant & Nourrisson',
+    heroTitle: 'Premiers secours, entraînement aux protocoles de soins d’urgence',
     heroSubtitle:
-      'Métronome RCP interactif, animations adaptées par âge pour étouffement et noyade, scénarios évolutifs et sauvegarde locale JSON.',
+      'Exercez-vous étape par étape à la RCP, aux manœuvres d’étouffement, au sauvetage aquatique, à la PLS et aux gestes d’urgence avec des guides visuels interactifs.',
     heroCta: 'Lancer le Simulateur',
     disclaimerTitle: 'Avertissement Éducatif',
     disclaimerBody:
@@ -483,10 +483,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'Schnelltest',
     navClinic: 'Fehlerklinik',
     navGuideSection: 'Lernleitfaden',
-    heroEyebrow: 'Erste Hilfe für Erwachsene, Kinder & Säuglinge',
-    heroTitle: 'Lebensrettende Abläufe sicher beherrschen, bevor Sekunden zählen.',
+    heroEyebrow: 'Protokolle für Erwachsene, Kinder & Säuglinge',
+    heroTitle: 'Erste Hilfe, Training von Protokollen der Notfallversorgung',
     heroSubtitle:
-      'Interaktives HLW-Metronom, altersgerechte Animationen für Atemwegsverlegung und Wasserrettung, verzweigte Notfallszenarien und lokaler JSON-Export.',
+      'Üben Sie Schritt für Schritt Reanimation, Maßnahmen bei Verschlucken, Wasserrettung, stabile Seitenlage und Wundversorgung mit interaktiven Anleitungen.',
     heroCta: 'Simulator Starten',
     disclaimerTitle: 'Wichtiger Bildungshinweis',
     disclaimerBody:
@@ -605,10 +605,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'Treino Rápido',
     navClinic: 'Clínica Erros',
     navGuideSection: 'Guia Estudo',
-    heroEyebrow: 'Treinamento em Adulto, Criança e Lactente',
-    heroTitle: 'Domine sequências vitais antes que cada segundo faça diferença.',
+    heroEyebrow: 'Protocolos em Adulto, Criança e Lactente',
+    heroTitle: 'Primeiros socorros, treinamento de protocolos de atendimento de emergência',
     heroSubtitle:
-      'Metrônomo interativo de RCP, animações adaptadas por idade para engasgo e água, cenários ramificados e backup local em JSON.',
+      'Pratique passo a passo manobras de RCP, desengasgo, resgate aquático, posição lateral de segurança e primeiros socorros com guias visuais e cenários.',
     heroCta: 'Iniciar Simulador',
     disclaimerTitle: 'Aviso Educacional',
     disclaimerBody:
@@ -727,10 +727,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'اختبار سريع',
     navClinic: 'عيادة الأخطاء',
     navGuideSection: 'دليل الدراسة',
-    heroEyebrow: 'تدريب البالغين والأطفال والرضع',
-    heroTitle: 'أتقن خطوات إنقاذ الحياة قبل أن تحسم الثواني الموقف.',
+    heroEyebrow: 'بروتوكولات البالغين والأطفال والرضع',
+    heroTitle: 'الإسعافات الأولية، والتدريب على بروتوكولات الرعاية الطارئة',
     heroSubtitle:
-      'بندول إيقاع تفاعلي للإنعاش، ورسوم متحركة مخصصة حسب العمر للاختناق والغرق، وسيناريوهات متدرجة مع حفظ محلي JSON.',
+      'تدرّب خطوة بخطوة على الإنعاش القلبي الرئوي، وإسعاف الاختناق، والإنقاذ المائي، ووضعية الإفاقة عبر أدلة بصرية تفاعلية وسيناريوهات عملية.',
     heroCta: 'ابدأ المحاكاة',
     disclaimerTitle: 'تنبيه تعليمي',
     disclaimerBody:
@@ -847,10 +847,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'रैपिड क्विज़',
     navClinic: 'एरर क्लिनिक',
     navGuideSection: 'अध्ययन गाइड',
-    heroEyebrow: 'वयस्क, बाल और शिशु प्राथमिक चिकित्सा प्रशिक्षण',
-    heroTitle: 'जीवन रक्षक क्रम का अभ्यास करें, इससे पहले कि हर सेकंड कीमती हो।',
+    heroEyebrow: 'वयस्क, बाल और शिशु प्रोटोकॉल',
+    heroTitle: 'प्राथमिक चिकित्सा और आपातकालीन देखभाल प्रोटोकॉल प्रशिक्षण',
     heroSubtitle:
-      'इंटरैक्टिव सीपीआर मेट्रोनोम, उम्र के अनुसार चोकिंग व जल बचाव एनीमेशन, परिदृश्य सिम्युलेटर और JSON प्रोफ़ाइल बैकअप।',
+      'इंटरैक्टिव विजुअल गाइड और परिदृश्य अभ्यास के साथ सीपीआर, चोकिंग राहत, जल बचाव, रिकवरी पोजीशन और प्राथमिक उपचार प्रक्रियाओं का चरण-दर-चरण अभ्यास करें।',
     heroCta: 'सिम्युलेटर शुरू करें',
     disclaimerTitle: 'शैक्षिक सूचना',
     disclaimerBody:
@@ -967,10 +967,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: 'Блиц-тест',
     navClinic: 'Разбор ошибок',
     navGuideSection: 'Справочник',
-    heroEyebrow: 'Обучение для взрослых, детей и младенцев',
-    heroTitle: 'Отработайте алгоритм спасения до того, как решающими станут секунды.',
+    heroEyebrow: 'Протоколы для взрослых, детей и младенцев',
+    heroTitle: 'Первая помощь, тренировка протоколов экстренной помощи',
     heroSubtitle:
-      'Интерактивный метроном СЛР, возрастная анимация при удушье и на воде, ветвящиеся сценарии и локальный профиль JSON.',
+      'Отрабатывайте шаг за шагом СЛР, помощь при удушье, спасение на воде, устойчивое боковое положение и неотложную помощь с интерактивными схемами и сценариями.',
     heroCta: 'Запустить симулятор',
     disclaimerTitle: 'Учебное уведомление',
     disclaimerBody:
@@ -1087,10 +1087,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: '快速测验',
     navClinic: '错题强化',
     navGuideSection: '知识指南',
-    heroEyebrow: '成人、儿童与婴儿急救规范训练',
-    heroTitle: '在黄金救援秒数到来前，熟练掌握每一步急救流程。',
+    heroEyebrow: '成人、儿童与婴儿急救规范',
+    heroTitle: '急救与应急救护流程规范训练',
     heroSubtitle:
-      '内置CPR节拍器、按年龄区分的梗阻与溺水SVG动画、多分支应急情景以及本地JSON档案导出。',
+      '通过交互式图解指南与情景演练，分步骤练习心肺复苏（CPR）、气道梗阻急救、涉水救援、恢复体位及常见应急救护操作。',
     heroCta: '开始情景训练',
     disclaimerTitle: '教育免责声明',
     disclaimerBody:
@@ -1207,10 +1207,10 @@ export const UI_STRINGS: Record<LangCode, UiStrings> = {
     navDrill: '速答クイズ',
     navClinic: '弱点復習',
     navGuideSection: '学習ガイド',
-    heroEyebrow: '成人・小児・乳児 応急手当トレーニング',
-    heroTitle: '救命の一秒を争う前に、正しい手順を身体で覚える。',
+    heroEyebrow: '成人・小児・乳児プロトコル',
+    heroTitle: '応急手当・緊急救護プロトコルトレーニング',
     heroSubtitle:
-      'CPRメトロノーム、年齢別チョーキング・水難SVGアニメーション、分岐型シナリオ、ローカルJSONバックアップに対応。',
+      'インタラクティブな図解ガイドとシナリオ演習で、心肺蘇生（CPR）、窒息解除、水難救助、回復体位などの応急処置手順を段階的に練習できます。',
     heroCta: '演習を始める',
     disclaimerTitle: '教育目的の免責事項',
     disclaimerBody:
