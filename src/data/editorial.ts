@@ -1,5 +1,6 @@
 import {t10} from '../i18n/helpers';
 import type {LocalizedText} from '../types';
+import {buildAmazonEsSearchUrl} from '../utils/affiliate';
 
 export interface EditorialSectionItem {
   id: string;
@@ -344,7 +345,7 @@ export const AFFILIATE_GEAR: AffiliateGearItem[] = [
       '内含无菌不粘敷料、弹力绷带、丁腈手套、急救保温毯及圆头剪刀。',
       '滅菌非固着ガーゼ、伸縮包帯、ニトリル手袋、保温シート、救急ハサミ一式を収録。',
     ),
-    url: 'https://www.redcross.org/store',
+    url: buildAmazonEsSearchUrl('botiquin primeros auxilios completo homologado'),
   },
   {
     id: 'gear_mask',
@@ -373,7 +374,7 @@ export const AFFILIATE_GEAR: AffiliateGearItem[] = [
       '便携硬盒装，内置单向过滤阀并支持儿童/成人双面密封使用。',
       'バッグや車内に常備しやすいコンパクトケース入り・逆流防止弁付き。',
     ),
-    url: 'https://shopcpr.heart.org/',
+    url: buildAmazonEsSearchUrl('mascarilla rcp bolsillo valvula unidireccional'),
   },
   {
     id: 'gear_water',
@@ -402,6 +403,6 @@ export const AFFILIATE_GEAR: AffiliateGearItem[] = [
       '无需下水即可在岸边或池畔实现安全高效的“伸物或抛物”救援。',
       '水に入らず岸やプールサイドから安全に救助ロープを届けられます。',
     ),
-    url: 'https://www.ilsf.org/',
+    url: buildAmazonEsSearchUrl('bolsa cuerda rescate acuatico flotador manta termica'),
   },
 ];

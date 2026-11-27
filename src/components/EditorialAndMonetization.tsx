@@ -7,6 +7,11 @@ import {
 } from '../data/editorial';
 import {pickText} from '../i18n/helpers';
 import type {UiStrings} from '../i18n/uiStrings';
+import {
+  AFFILIATE_LINK_REL,
+  AFFILIATE_LINK_TARGET,
+  forceAmazonEsAffiliateUrl,
+} from '../utils/affiliate';
 import type {LangCode} from '../types';
 
 export const MediaNetAdSlot: React.FC<{
@@ -43,46 +48,51 @@ export const EditorialAndMonetization: React.FC<{
         aria-labelledby="affiliate-gear-heading"
         className="rounded-xl border border-slate-200 bg-white p-6"
       >
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <div className="space-y-2">
           <h2
             id="affiliate-gear-heading"
             className="font-display text-lg font-bold text-slate-900"
           >
             {ui.affiliateHeading}
           </h2>
-          <p className="text-xs text-slate-500">{ui.affiliateDisclosure}</p>
+          <p className="rounded-lg border border-slate-200 bg-[#F8FAFC] px-3.5 py-2 text-xs text-slate-600 leading-relaxed">
+            {ui.affiliateDisclosure}
+          </p>
         </div>
 
         <div className="mt-4 grid gap-4 md:grid-cols-3">
-          {AFFILIATE_GEAR.map((item) => (
-            <article
-              key={item.id}
-              className="flex flex-col justify-between rounded-xl border border-slate-200 bg-[#F8FAFC] p-4"
-            >
-              <div>
-                <div className="text-xs font-semibold text-blue-700">
-                  {pickText(item.category, lang)}
+          {AFFILIATE_GEAR.map((item) => {
+            const affiliateUrl = forceAmazonEsAffiliateUrl(item.url);
+            return (
+              <article
+                key={item.id}
+                className="flex flex-col justify-between rounded-xl border border-slate-200 bg-[#F8FAFC] p-4"
+              >
+                <div>
+                  <div className="text-xs font-semibold text-blue-700">
+                    {pickText(item.category, lang)}
+                  </div>
+                  <h3 className="mt-1 font-display text-sm font-bold text-slate-900 leading-snug">
+                    {pickText(item.title, lang)}
+                  </h3>
+                  <p className="mt-2 text-xs text-slate-600 leading-relaxed">
+                    {pickText(item.description, lang)}
+                  </p>
                 </div>
-                <h3 className="mt-1 font-display text-sm font-bold text-slate-900 leading-snug">
-                  {pickText(item.title, lang)}
-                </h3>
-                <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  {pickText(item.description, lang)}
-                </p>
-              </div>
-              <div className="mt-4 pt-3 border-t border-slate-200">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="sponsored nofollow noopener"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 hover:text-red-600 transition-colors"
-                >
-                  <span>{ui.affiliateVisitLink}</span>
-                  <ExternalLink className="h-3.5 w-3.5" />
-                </a>
-              </div>
-            </article>
-          ))}
+                <div className="mt-4 pt-3 border-t border-slate-200">
+                  <a
+                    href={affiliateUrl}
+                    target={AFFILIATE_LINK_TARGET}
+                    rel={AFFILIATE_LINK_REL}
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-900 hover:text-red-600 transition-colors"
+                  >
+                    <span>{ui.affiliateVisitLink}</span>
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
